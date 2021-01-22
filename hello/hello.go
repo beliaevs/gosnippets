@@ -13,15 +13,15 @@ func main() {
 	for {
 		fmt.Printf("Input number from %d to %d\n", a, b)
 		var guess int
-		fmt.Scanf("%d", &guess)
+		fmt.Scan(&guess)
 		if guess == secret {
-			fmt.Println("You guessed!\n")
+			fmt.Println("You guessed!")
 			return
 		}
 		if guess < secret {
 			fmt.Println("Less")
 		} else {
-			fmt.Println("more")
+			fmt.Println("More")
 		}
 	}
 }
